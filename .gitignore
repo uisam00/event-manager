@@ -507,3 +507,7 @@ Front/ProEventos-App/.vscode/*
 !.vscode/extensions.json
 
 
+#Excluindo DB
+*.db
+*.db-shm
+*.db-wal
