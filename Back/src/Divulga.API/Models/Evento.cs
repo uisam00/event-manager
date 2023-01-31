@@ -1,4 +1,4 @@
-namespace ProEventos.API.Models
+namespace Divulga.API.Models
 {
     public class Evento
     {

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using ProEventos.API.Data;
-using ProEventos.API.Models;
+using Divulga.API.Data;
+using Divulga.API.Models;
 
-namespace ProEventos.API.Controllers
+namespace Divulga.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

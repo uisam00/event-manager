@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using ProEventos.API.Models;
+using Divulga.API.Models;
 
-namespace ProEventos.API.Data
+namespace Divulga.API.Data
 {
     public class DataContext : DbContext
     {
