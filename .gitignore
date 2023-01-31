@@ -23,7 +23,6 @@ mono_crash.*
 [Rr]eleases/
 x64/
 x86/
-[Ww][Ii][Nn]32/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 bld/
@@ -31,6 +30,7 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
+Resources/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
@@ -61,12 +61,6 @@ BenchmarkDotNet.Artifacts/
 project.lock.json
 project.fragment.lock.json
 artifacts/
-
-# Tye
-.tye/
-
-# ASP.NET Scaffolding
-ScaffoldingReadMe.txt
 
 # StyleCop
 StyleCopReport.xml
@@ -145,9 +139,7 @@ _TeamCity*
 !.axoCover/settings.json
 
 # Coverlet is a free, cross platform Code Coverage Tool
-coverage*.json
-coverage*.xml
-coverage*.info
+coverage*[.json, .xml, .info]
 
 # Visual Studio code coverage results
 *.coverage
@@ -361,9 +353,6 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 
-# Fody - auto-generated XML schema
-FodyWeavers.xsd
-
 ##
 ## Visual studio for Mac
 ##
@@ -444,6 +433,7 @@ $RECYCLE.BIN/
 .idea/
 *.sln.iml
 
+
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
@@ -458,6 +448,7 @@ $RECYCLE.BIN/
 
 # profiling files
 chrome-profiler-events*.json
+speed-measure-plugin*.json
 
 # IDEs and editors
 /.idea
@@ -489,23 +480,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-
-##
-## Visual Studio Code
-##
-
-Back/.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-Front/ProEventos-App/.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
 
 #Excluindo DB
 *.db
