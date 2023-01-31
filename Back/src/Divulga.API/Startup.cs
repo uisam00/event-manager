@@ -48,9 +48,9 @@ public class Startup
 
         app.UseAuthorization();
 
-        app.UseCors(acess => acess.AllowAnyHeader()
-                                  .AllowAnyMethod()
-                                  .AllowAnyOrigin()
+        app.UseCors(x => x.AllowAnyHeader()
+                          .AllowAnyMethod()
+                          .AllowAnyOrigin()
         );
 
         app.UseEndpoints(endpoints =>
