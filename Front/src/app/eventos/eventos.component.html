@@ -18,7 +18,7 @@
     <tr>
       <th>
         <button type="button" class="btn btn-outline-light btn-sm" (click)="mostraImgs = !mostraImgs">
-          {{!mostraImgs ? 'Mostrar' : 'Ocultar'}}
+          {{!mostraImgs ? 'Exibir' : 'Ocultar'}}
         </button>
       </th>
       <th>#</th>
@@ -39,7 +39,7 @@
           src="\assets\{{evento.imagemUrl}}"
           [style.width.px]="widthImg"
           [style.margin.px]="marginImg"
-
+          alt="{{evento.tema}}"
         >
       </td>
       <td>{{evento.eventoId}}</td>
@@ -54,7 +54,7 @@
       </td>
     </tr>
   </tbody>
-  <tfoot *ngIf="!eventos?.length">
+  <tfoot *ngIf="!eventosFiltrador?.length">
     <tr>
       <td colspan="8" class="text-center">
         <h4>Nenhum Evento encontrado!</h4>
